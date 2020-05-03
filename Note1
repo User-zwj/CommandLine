@@ -47,8 +47,8 @@ env
 
 history
 !198
-history -c
-history -w
+history -c  #clean history
+history -w  #force the history file to be updated
 
 
 Ctrl+C: quit a command that is not responding
