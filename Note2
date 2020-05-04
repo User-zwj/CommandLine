@@ -1,0 +1,48 @@
+Beginning the Linux Command Line
+Second Edition
+Sander van Vugt
+
+
+The shell is the command interpreter: it is responsible for making something out of the things that you type on the command line. 
+
+Two frequently used shells are: Bash and Dash
+
+=============================== Chapter 2 ==================================
+Become root
+> sudo su
+> passwd
+> exit
+(First time don't know password of >su, you can use the above command to change the password of su. Then next time when you use >su, you would have the password.)
+
+## Change the password ##
+> passwd user_name    #change password for a certain user
+> passwd user_name -d     #remove the password for a certain user
+
+## Becoming another user ##
+> su Linda        #switch account to user account Linda
+> su -        #ensure that the /etc/profile settings are applied
+jjjjj
+## Obtain information about other users ##
+> users   #information about users who are logged in
+> who    #information about users including IP address
+> w      #see what a user is doing, more information
+> finger Linda      #Give a summary of the current state of a user account
+
+## Communicating with ohter users ##
+> write Linda     #private message, Ctrl+D to end
+> wall
+message          #message to all users
+
+## Disabling Real-time Messages ##
+> mesg n     #no one can write messages to your console
+> mesg y     #open your console again for messages from other users
+
+## Sending Mail from the command line ##
+> mail Linda   
+Subject 
+This is the body
+.
+
+> mail -s "something is wrong" root < .
+
+
